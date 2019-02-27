@@ -1,0 +1,11 @@
+# Files #
+###################
+geckodriver.log
+
+# Folders #
+###################
+.idea/
+src/__pycache__/
+src/main/__pycache__/
+src/main/orientadoobjeto/__pycache__/
+src/main/procedural/__pycache__/
