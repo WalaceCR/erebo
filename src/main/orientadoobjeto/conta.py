@@ -1,6 +1,7 @@
 
 class Conta:
 
+    ##self.__numero(mantenho o acesso ao atributo privado, acesso esse trem apenas pelo método)
     ##construtor da classe, aqui dentro crio as variáveis/atributos da classe
     def __init__(self, numero, titular, saldo, limite):
         print("Construindo objeto... {}".format(self))
