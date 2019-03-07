@@ -5,19 +5,19 @@ class Conta:
     ##construtor da classe, aqui dentro crio as variáveis/atributos da classe
     def __init__(self, numero, titular, saldo, limite):
         print("Construindo objeto... {}".format(self))
-        self.numero = numero
-        self.titular = titular
-        self.saldo = saldo
-        self.limite = limite
+        self.__numero = numero
+        self.__titular = titular
+        self.__saldo = saldo
+        self.__limite = limite
 
     def extrato(self):
-        print("Saldo do felizardo {} é de {}".format(self.titular, self.saldo))
+        print("Saldo do felizardo {} é de {}".format(self.__titular, self.__saldo))
 
     def depositar(self, saldo):
-        self.saldo += saldo
+        self.__saldo += saldo
 
     def saque(self, saldo):
-        if saldo > self.saldo:
+        if saldo > self.__saldo:
             print("Saldo insuficiente para saque! Operação cancelada!!!")
         else:
-            self.saldo -= saldo
+            self.__saldo -= saldo
