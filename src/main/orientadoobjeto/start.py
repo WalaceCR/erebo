@@ -16,6 +16,8 @@ nova_conta3.extrato()
 nova_conta3.depositar(3234345689.90)
 nova_conta3.saque(323434000.90)
 nova_conta3.extrato()
+nova_conta2.transfere(nova_conta2, nova_conta3, 1000.00)
+nova_conta3.extrato()
 
 ##cada nova execução gera um objeto diferente como exemplo 0x7f5f57f08c50, 0x7f5f57f55555 e etc.
 ##print("Retornando uma nova conta {} do titular {}".format(nova_conta, nova_conta.titular))

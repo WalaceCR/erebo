@@ -21,3 +21,8 @@ class Conta:
             print("Saldo insuficiente para saque! Operação cancelada!!!")
         else:
             self.__saldo -= saldo
+
+    def transfere(self, origem, destino, saldo):
+        origem.saque(saldo)
+        destino.depositar(saldo)
+
